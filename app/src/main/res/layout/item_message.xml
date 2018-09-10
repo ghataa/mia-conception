@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable name="message"
-            type="com.ghataa.miaconception.model.Message"/>
+
+        <variable
+            name="message"
+            type="com.ghataa.miaconception.model.Message" />
     </data>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="@dimen/message_item_min_height"
-        android:orientation="horizontal"
         android:layout_marginStart="@dimen/margin_extratiny"
         android:layout_marginTop="@dimen/margin_extratiny"
-        android:layout_marginBottom="@dimen/margin_extratiny"
         android:layout_marginEnd="@dimen/margin_extratiny"
+        android:layout_marginBottom="@dimen/margin_extratiny"
+        android:minHeight="@dimen/message_item_min_height"
+        android:orientation="horizontal"
         app:cardUseCompatPadding="true">
 
         <RelativeLayout
-            android:layout_marginStart="@dimen/margin_tiny"
-            android:layout_marginEnd="@dimen/margin_tiny"
-            android:layout_marginTop="@dimen/margin_tiny"
-            android:layout_marginBottom="@dimen/margin_tiny"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginEnd="@dimen/margin_tiny"
+            android:layout_marginBottom="@dimen/margin_tiny">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="@dimen/margin_tiny" />
 
             <TextView
                 android:id="@+id/content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{message.content}"/>
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image"
+                android:text="@{message.content}"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris neque tortor, porttitor ac posuere sed, dapibus nec tellus. Praesent aliquet elit consectetur arcu luctus consectetur. " />
 
         </RelativeLayout>
 
