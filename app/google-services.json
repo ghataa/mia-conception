@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "471683345735",
+    "firebase_url": "https://miaconception-e1926.firebaseio.com",
+    "project_id": "miaconception-e1926",
+    "storage_bucket": "miaconception-e1926.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471683345735:android:d8df409a3cf3eb93",
+        "android_client_info": {
+          "package_name": "com.ghataa.miaconception"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471683345735-48vtergj0ilbqqbjnoo7cm5qblu26ifn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA04bKPoB8GDHAWECBaOCSG4OBi6rlu7P0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
