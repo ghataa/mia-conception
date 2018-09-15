@@ -36,12 +36,23 @@
                 android:layout_marginEnd="@dimen/margin_tiny" />
 
             <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_tiny"
+                android:layout_toEndOf="@+id/image"
+                android:text="@{message.title}"
+                android:textSize="@dimen/font_big"
+                tools:text="Mauris neque tortor" />
+
+            <TextView
                 android:id="@+id/content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                android:layout_below="@+id/title"
                 android:layout_toEndOf="@+id/image"
-                android:text="@{message.content}"
+                android:text="@{message.body}"
+                android:textSize="@dimen/font_small"
                 tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris neque tortor, porttitor ac posuere sed, dapibus nec tellus. Praesent aliquet elit consectetur arcu luctus consectetur. " />
 
         </RelativeLayout>
